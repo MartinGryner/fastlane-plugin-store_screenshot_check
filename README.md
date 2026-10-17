@@ -5,13 +5,13 @@ Play. The `store_screenshot_check` action checks image data, dimensions,
 transparency and set counts using `@grunersoftware/store-screenshot-specs` 0.1.0.
 It returns a report and, by default, stops the lane when a file or set fails.
 
-Add the plugin to a Fastlane project:
+Version 0.1.1 is published on RubyGems. Add the plugin to a Fastlane project:
 
 ```sh
 bundle exec fastlane add_plugin store_screenshot_check
 ```
 
-Or add `gem 'fastlane-plugin-store_screenshot_check', '~> 0.1.0'` to the
+Or add `gem 'fastlane-plugin-store_screenshot_check', '~> 0.1.1'` to the
 project's `fastlane/Pluginfile` and run `bundle install`. The lane host needs Node.js 22 or newer,
 Ruby 3.1 or newer, and Fastlane 2.220 or newer (2.x). The gem includes its
 JavaScript validator and dependencies; no npm install is needed to run it.

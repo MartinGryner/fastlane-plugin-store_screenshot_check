@@ -13,6 +13,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.add_runtime_dependency 'fastlane', '>= 2.220', '< 3'
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = spec.homepage + '/tree/v0.1.1'
   spec.metadata['bug_tracker_uri'] = spec.homepage + '/issues'
 end

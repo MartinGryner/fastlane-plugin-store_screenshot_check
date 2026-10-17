@@ -57,6 +57,9 @@ test('documentation lists precisely the supported shared targets and published i
   const { appleTargetIds } = await import('../vendor/validate-store-screenshots/node_modules/@grunersoftware/store-screenshot-specs/dist/index.js');
   const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
   for (const target of [...appleTargetIds, 'google-phone']) assert.ok(readme.includes('`' + target + '`'));
+  assert.match(readme, /Version 0\.1\.1 is published on RubyGems/);
+  assert.match(readme, /fastlane add_plugin store_screenshot_check/);
+  assert.match(readme, /fastlane-plugin-store_screenshot_check', '~> 0\.1\.1'/);
   assert.match(readme, /fastlane-plugin-store_screenshot_check/);
   assert.match(readme, /Node.js 22 or newer/);
   assert.match(readme, /24 megapixels/);
