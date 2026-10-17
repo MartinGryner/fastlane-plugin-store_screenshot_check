@@ -1,0 +1,2 @@
+require_relative 'store_screenshot_check/version'
+require_relative 'store_screenshot_check/actions/store_screenshot_check_action'
